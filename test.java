@@ -6,6 +6,8 @@ public class test {
 
         //sys.printMatrix(sys.HomogeneousTransform(6, -2, 10, 1));
 
-        sys.printMatrix(sys.TransformationToPoint(-5,2,-12,1));
+        //sys.printMatrix(sys.TransformationToPoint(-5,2,-12,1));
+
+        Field3D field3D = new Field3D(76, 56.0, 0.0,90, 90);
     }
 }
