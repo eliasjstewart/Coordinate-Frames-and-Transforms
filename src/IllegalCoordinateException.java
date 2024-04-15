@@ -1,3 +1,5 @@
+package src;
+
 public class IllegalCoordinateException extends Exception{
     
     public IllegalCoordinateException(String string){

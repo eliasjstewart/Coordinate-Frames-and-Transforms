@@ -1,4 +1,8 @@
-public class Field3D extends Field2D{
+package src;
+
+import src.Field2D;
+
+public class Field3D extends Field2D {
 
     public double zHeading;
     public static double MIN_HEIGHT = 0;
