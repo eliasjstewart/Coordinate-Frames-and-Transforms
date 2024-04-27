@@ -10,7 +10,7 @@ public class test {
 
         CoordinateFrame sys = new CoordinateFrame(69.0, 23.0, 90);
 
-        //sys.printMatrix(sys.HomogeneousTransform(6, -2, 10, 1));
+        sys.printMatrix(sys.HomogeneousTransform(6, -2, 10, 1));
 
         //sys.printMatrix(sys.TransformationToPoint(-5,2,-12,1));
 

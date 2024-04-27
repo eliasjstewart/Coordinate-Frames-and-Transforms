@@ -72,6 +72,19 @@ public class CoordinateFrame {
         this.heading = Math.toRadians(heading);
         }
 
+    public CoordinateFrame(double x, double z) throws IllegalCoordinateException{
+        boolean isOutBoundsX = More.check(x, MAX_INCHES) || Less.check(x, MIN_INCHES);
+        boolean isOutBoundsZ = More.check(y, MAX_INCHES) || Less.check(y, MIN_INCHES);
+        boolean isOutofBounds = isOutBoundsX || isOutBoundsZ;
+        if(isOutofBounds) {
+            throw new IllegalCoordinateException("Not Reachable!! Parameters outside of coordinate frame!");
+        }
+
+        this.x = x;
+        this.y = y;
+        this.heading = Math.toRadians(heading);
+    }
+
     public static double wrapAngle(double angle) {
         return ((angle % 360) + 360) % 360;
     }
